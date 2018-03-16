@@ -1,0 +1,65 @@
+/* default.scss
+------------------------------------------------------------ */
+html, body {
+  font-size : 10px;
+}
+
+html {
+  -webkit-text-size-adjust : 100%;
+}
+
+body {
+  font-family : 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  line-height : 1.5;
+  word-break : break-all;
+  color : #222;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strong, sub, sup, tt, var, ul, ol, li, dl, dt, dd, form, fieldset, legend, label, table, caption, tbody, tfoot, thead, tr, th, td, header, main, nav, footer {
+  margin : 0;
+  padding : 0;
+}
+
+* {
+  box-sizing : border-box;
+}
+
+h1, h2, h3, h4, h5, h6, strong, em, b {
+  font-weight : bold;
+}
+
+ul, ol, li {
+  margin : 0;
+  padding : 0;
+  list-style : none;
+}
+
+img {
+  line-height : 1;
+  max-width : 100%;
+  vertical-align : bottom;
+  border : 0;
+}
+
+hr {
+  display : none;
+}
+
+iframe {
+  width : 100%;
+}
+
+a {
+  outline : none;
+
+  -webkit-tap-highlight-color : rgba(0,0,0,0);
+  &:hover {
+    // color: #000;
+  }
+  &:active {
+    // color: #000;
+  }
+  &:visited {
+    // color: #000;
+  }
+}

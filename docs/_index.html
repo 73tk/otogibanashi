@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>OTOGI BANASHI</title>
+</head>
+<body>
+  <button id="speaker-add-show-btn" v-on:click="showSpeakerAddPanel()">speaker</button>
+  <ul id="speaker-list">
+    <li v-for="item in items">
+      {{ item.name }}
+    </li>
+  </ul>
+  <div id="speaker-add-panel" v-show="isPanelShow">
+    <input type="file" name="file" id="new-speaker-icon">
+    <input type="text" name="speakerName" id="new-speaker-name">
+    <div id="result"></div>
+  </div>
+  <div class="wrap">
+    <div id="screen-shot-target">
+      <div id="">
+      
+      </div><!-- / -->
+    <div class="screen-shot-btn-wrap">
+    <button id="screen-shot-btn" v-on:click="screenShot()">screen shot</button>
+    <button id="dl-btn" v-on:click="downloadImage()">download</button>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<!-- <script src="js/app.js"></script> -->
+</html>

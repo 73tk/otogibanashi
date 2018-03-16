@@ -1,0 +1,29 @@
+// --- clear fix
+
+%clf {
+  zoom : 1;
+  &:after {
+    display : block;
+    clear : both;
+    content : '';
+  }
+}
+
+// --- Tips
+
+// Media query
+
+$small-device : 768px;
+$medium-device : 1200px;
+
+@mixin sp {
+  @media screen and (max-width: $small-device) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media screen and (max-width: $medium-device) {
+    @content;
+  }
+}
